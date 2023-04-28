@@ -1,12 +1,13 @@
-import { useState } from 'react'
+//import { useState } from 'react'
+
+import { Main } from './Components/Main';
 
 
-function App() {
-  
+const App = ()=> {
+  return( 
 
-  return (
-    <> </>
-  )
+    <Main />
+);
 }
 
-export default App
+export default App;
