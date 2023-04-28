@@ -12,6 +12,10 @@ export const Main = ()=>{
         setCity(event.target.value);
     }
 
+    const [name, setName] = useState('Faça sua busca');
+    const [temp, setTemp] = useState('');
+    const [desc, setDesc] = useState('');
+
     const apiKey = "56817c46f017148ea21e7d189c4e7f8b";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}&lang=pt_br`;
     
@@ -20,6 +24,9 @@ export const Main = ()=>{
         .then(response =>{
             const data = response.data;
             console.log(data);
+            setName(data.name);
+            setTemp(data.main.temp + "°");
+            setDesc(data.weather[0].description.toUpperCase());
         })
     }
     
@@ -41,9 +48,9 @@ export const Main = ()=>{
 
             <div className={styles.cardClima}>
                 <div className={styles.info}>
-                    <span className={styles.name}>Curitiba</span>
-                    <span className={styles.temp}>14</span>
-                    <span className={styles.desc}>Nublado</span>
+                    <span className={styles.name}>{name}</span>
+                    <span className={styles.temp}>{temp}</span>
+                    <span className={styles.desc}>{desc}</span>
                 </div>
             </div>
 
