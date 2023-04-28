@@ -36,9 +36,10 @@
     font-weight: bold;
 }
 
-#searchBox{
+.searchButton{
     margin-right: 20px;
 }
+
 
 .containerCard{
     width: 100%;
