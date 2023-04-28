@@ -28,6 +28,8 @@ export const Main = ()=>{
             setTemp(data.main.temp + "°");
             setDesc(data.weather[0].description.toUpperCase());
         })
+
+        .catch(()=>alert("Cidade não encontrada, tente novamente."))
     }
     
     return (
