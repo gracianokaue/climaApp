@@ -88,3 +88,18 @@
     font-size: 20px;
     color: #1D264C;
 }
+
+footer{
+    height: 30px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E6F4F1;
+    opacity: .4;
+    color: #000;
+    font-size: 15px;
+}

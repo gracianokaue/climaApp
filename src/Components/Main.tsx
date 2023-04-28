@@ -58,6 +58,7 @@ export const Main = ()=>{
 
         </div>
         
+        <footer>climaApp, por Kauê Graciano - 2023</footer>
 
 
       </div>
